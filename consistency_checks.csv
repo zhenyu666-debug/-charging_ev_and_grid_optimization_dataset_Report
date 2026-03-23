@@ -1,0 +1,4 @@
+﻿check,mae,max_abs_error,exact_match_count
+waiting_time_vs_calc,0.0,0.0,8354
+charging_duration_vs_calc,0.5005913437263586,0.999980800000003,18
+energy_consumed_vs_soc_formula,2.4800104262649177e-09,1.0000022143685783e-08,8354

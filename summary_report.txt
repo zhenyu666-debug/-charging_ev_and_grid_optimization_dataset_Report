@@ -1,0 +1,44 @@
+EV Charging Dataset - Advanced EDA Summary
+============================================================
+Rows: 8354
+Columns: 34
+
+[Top correlations for waiting_time]
+- calc_waiting_time: 1.0000
+- optimization_reward: -0.5169
+- final_soc: -0.0175
+- charging_demand: -0.0167
+- station_load: -0.0159
+
+[Top correlations for charging_demand]
+- station_load: 0.9945
+- optimization_reward: -0.5768
+- hour: 0.3973
+- queue_length: 0.0698
+- renewable_energy_ratio: 0.0206
+
+[Top correlations for optimization_reward]
+- renewable_energy_ratio: 0.5895
+- station_load: -0.5803
+- charging_demand: -0.5768
+- waiting_time: -0.5169
+- calc_waiting_time: -0.5169
+
+[Top correlations for charging_duration]
+- calc_charging_duration: 1.0000
+- charging_power_kW: -0.6471
+- energy_consumed_kWh: 0.5800
+- calc_energy_from_soc: 0.5800
+- battery_capacity_kWh: 0.4883
+
+[Consistency checks]
+- waiting_time_vs_calc: mae=0.0000, max_abs_error=0.0000, exact_match=8354
+- charging_duration_vs_calc: mae=0.5006, max_abs_error=1.0000, exact_match=18
+- energy_consumed_vs_soc_formula: mae=0.0000, max_abs_error=0.0000, exact_match=8354
+
+[Top outlier columns by IQR ratio]
+- charging_power_kW: outliers=2087, ratio=24.98%
+- final_soc: outliers=989, ratio=11.84%
+- charging_duration: outliers=298, ratio=3.57%
+- calc_charging_duration: outliers=298, ratio=3.57%
+- calc_waiting_time: outliers=18, ratio=0.22%
